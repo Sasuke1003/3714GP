@@ -1,0 +1,20 @@
+
+
+/*THIS THEME NAME CALLED "ITE3714 GroupProject".
+MAKING BY Chung's' Studio.
+OWNER: Lau Kin Chung
+Instagram: @chung.lkc
+OTHER PORTFOLIO WOULD BE FOUND ON "https://github.com/Sasuke1003"*/
+
+@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
+/*Basic setting*/
+html{-webkit-user-drag: none;user-select: none;-webkit-user-modify: none;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active { text-decoration: none;}
+/*Basic setting*/
+
+/*BODY*/
+.mainbg{position:absolute;top:0;left:0;}
+/*BODY*/

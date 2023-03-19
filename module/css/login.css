@@ -15,6 +15,6 @@ a:active { text-decoration: none;}
 /*Basic setting*/
 
 /*BODY*/
-body{background-image:url(https://Sasuke1003.github.io/3714GP/src/images/main.png);font-family: Helvetica;display: flex;justify-content: center;align-items: center;}
+body{background-image:url(https://Sasuke1003.github.io/3714GP/src/images/loginbg.png);font-family: Helvetica;display: flex;justify-content: center;align-items: center;}
 .login{position:relative;width:400px;height:440px;background:transparent;border:2px solid rgba(255,255,255,.5);border-radius:20px;backdrop-filter: blur(20px);}
 /*BODY*/

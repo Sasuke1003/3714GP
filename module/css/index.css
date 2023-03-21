@@ -66,9 +66,8 @@ footer{user-select: none;border-top: 5px solid rgb(0,0,0);position: absolute;lef
 footer .footerimg{margin-top:10px;width:150px;}
 /*FOOTER*/
 
-
 /*LOADING ANIMATION*/
-.headanimate{z-index:100;left:0px;top:0;position:fixed;width:100%;height:100%;background-color: #fff;font-family: helvetica;animation-name:headanimate;animation-duration:1s;animation-delay:3s;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
+.headanimate{z-index:100;left:0px;top:0;position:fixed;width:100%;height:100%;background-color: #14ffb4;font-family: helvetica;animation-name:headanimate;animation-duration:1s;animation-delay:3s;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
 .headanimate h1{display:flex;justify-content: center;align-items: center;height:80%;animation-name:maintitle;animation-duration:3s;animation-timing-function: ease;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
 @keyframes maintitle{from{font-size:10px;}to{font-size:100px;}}
 @keyframes headanimate{from{z-index: 100;}to{z-index:0;background-color:transparent;color:transparent;}}

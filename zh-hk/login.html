@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--THIS THEME NAME CALLED "ITE3714 GroupProject".
+MAKING BY Chung's' Studio.
+OWNER: Lau Kin Chung
+Instagram: @chung.lkc
+OTHER PORTFOLIO WOULD BE FOUND ON "https://github.com/Sasuke1003"-->
+<!---***HTML START***--->
+<html>
+    <!--HEADING & META RESOURCE-->
+    <head>
+        <title>登入</title>
+		<meta charest="utf-8">
+		<meta name="description" content="ITE3714 GroupProject Game & Website & Animation">
+		<meta name="keywords" content="Lau Kin Chung">
+		<meta name="author" content="Lau Kin Chung">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="module/css/login.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<link rel="icon" href="src/images/icon.jpg" type="image/x-icon" size="128x128">
+    </head>
+    <!--HEADING & META RESOURCE-->
+
+    <!--LOGIN BODY-->
+    <body>
+        <section>
+            <div class="form-box">
+                <form method="POST" action="/process-login">
+                    <img src="src/images/csSwhite.png" class="csSimg">
+                    <h2>登入</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="Mail" required>
+                        <label for="">郵箱</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="Passwd" required>
+                        <label for="">密碼</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">記得我</label>
+                        <a href="#">忘記密碼</a>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>沒有帳戶？ <a href="#">註冊</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    <!--LOGIN BODY-->
+</html>

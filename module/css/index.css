@@ -23,10 +23,12 @@ a:active { text-decoration: none;}
 .TOP-navbar li a {display: block;color: #aaa;text-align: center;padding: 19px 16px;text-decoration: none;}
 .TOP-navbar li .simply:hover {color:#00b3a4; border-top:rgb(201, 93, 43) solid 3px}
 .TOP-navbar li .home:hover {color:#ebc624}
-.TOP-navbar li .Login {margin-right:25px;}
+.TOP-navbar li .Login {margin-right:10px;}
 .TOP-navbar li .Login:hover {color:#ce3b3b}
 .TOP-navbar .csSwhite {margin-left:20px;margin-top:-10px;}
 .TOP-navbar .csSwhite:hover {content:url(https://Sasuke1003.github.io/3714GP/src/images/csSred.png);width:100px;}
+.TOP-navbar .right{float:right}
+.TOP-navbar .lang{margin-right:25px;}
 /*TOP-Navigation Bar*/
 
 /*Slideshow*/

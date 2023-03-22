@@ -23,12 +23,15 @@ a:active { text-decoration: none;}
 .TOP-navbar li a {display: block;color: #aaa;text-align: center;padding: 19px 16px;text-decoration: none;}
 .TOP-navbar li .simply:hover {color:#00b3a4; border-top:rgb(201, 93, 43) solid 3px}
 .TOP-navbar li .home:hover {color:#ebc624}
-.TOP-navbar li .Login {margin-right:10px;}
+.TOP-navbar li .Login {margin-right:15px;}
 .TOP-navbar li .Login:hover {color:#ce3b3b}
 .TOP-navbar .csSwhite {margin-left:20px;margin-top:-10px;}
 .TOP-navbar .csSwhite:hover {content:url(https://Sasuke1003.github.io/3714GP/src/images/csSred.png);width:100px;}
 .TOP-navbar .right{float:right}
-.TOP-navbar .lang{margin-right:25px;}
+.TOP-navbar .lang{margin-right:-9px;}
+.TOP-navbar .langzh-hk{margin-right:0px;}
+.TOP-navbar .right .lang:hover{color:#dbff0e;}
+.TOP-navbar .right .langzh-hk:hover{color:#dbff0e;}
 /*TOP-Navigation Bar*/
 
 /*Slideshow*/
@@ -62,8 +65,6 @@ body{background-color:#14Ffb4;animation-name:bodybgc;animation-delay:3s;animatio
 .main{width:100%;height:2000px;top:625px;left:0;bottom:0;right:0;background-color:#fff;border-top:5px solid #333;display:flex;justify-content:center;align-items:center;position:absolute;}
 .mainbg{position:absolute;top:0;left:0;}
 .mainbgv{position: fixed;top:0;left:0;width:100%;height:625px;}
-@keyframes main-b-p{0%{transform:translateX(-500px);color:#dfff6c}20%{color:#000000}50%{color:#dfff6c}100%{transform:translateX(3000px)}}
-.background p{position:absolute;left:-200px;top:-80px;font-family:Arial, Helvetica, sans-serif;font-size:300px;z-index: 5;animation-name:main-b-p;animation-delay:3s;animation-duration:20s;animation-timing-function: ease;animation-iteration-count:infinite;animation-direction: normal;animation-fill-mode: forwards;}
 /*BODY*/
 
 /*FOOTER*/

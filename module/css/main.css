@@ -13,6 +13,13 @@ a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active { text-decoration: none;}
+@keyframes fadein {0%{z-index:100;}100%{z-index:0;background-color:transparent;}}
+.fadein{background-color:rgba(32, 32, 32,1);position:absolute;left:0px;top:72px;width:100%;animation-name:fadein;animation-duration:2s;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
+.contact .fadein{bottom:-550px;}
+.download .fadein{bottom:0px;}
+.universe .fadein{bottom:0px;}
+.updates .fadein{bottom:-2500px;}
+.wiki .fadein{bottom:0px;}
 /*Basic setting*/
 
 /*TOP-Navigation Bar*/
@@ -21,17 +28,18 @@ a:active { text-decoration: none;}
 .TOP-navbar ul {list-style-type: none;margin:0;padding:0;overflow: hidden;background-color:rgba(0, 0 , 0, 0.93);}
 .TOP-navbar li {font-size:20px;margin-top:10px;margin-bottom:15px;float: left; font-family: helvetica;}
 .TOP-navbar li a {display: block;color: #aaa;text-align: center;padding: 19px 16px;text-decoration: none;}
-.TOP-navbar li .simply:hover {color:#00b3a4; border-top:rgb(201, 93, 43) solid 3px}
-.TOP-navbar li .home:hover {color:#ebc624}
+.TOP-navbar li .simply:hover {color:#00b3a4; border-top:rgb(201, 93, 43) solid 3px;}
+.TOP-navbar li .home:hover {color:#ebc624;}
 .TOP-navbar li .Login {margin-right:15px;}
-.TOP-navbar li .Login:hover {color:#ce3b3b}
+.TOP-navbar li .Login:hover {color:#ce3b3b;}
 .TOP-navbar .csSwhite {margin-left:20px;margin-top:-10px;}
 .TOP-navbar .csSwhite:hover {content:url(https://Sasuke1003.github.io/3714GP/src/images/csSred.png);width:100px;}
-.TOP-navbar .right{float:right}
+.TOP-navbar .right{float:right;}
 .TOP-navbar .lang{margin-right:-9px;}
 .TOP-navbar .langzh-hk{margin-right:0px;}
 .TOP-navbar .right .lang:hover{color:#dbff0e;}
 .TOP-navbar .right .langzh-hk:hover{color:#dbff0e;}
+.TOP-navbar .darkmode{position:absolute;top:20px;right:150px;width:5px;height:5px;background-color:#00072c;border:#333 2px solid;border-radius: 5px;}
 /*TOP-Navigation Bar*/
 
 /*Slideshow*/
@@ -68,22 +76,94 @@ input[type="radio"] {position:relative;z-index: 100;display: none;}
 /*FOOTER*/
 footer{user-select: none;border-top: 5px solid rgb(0,0,0);position: absolute;left: 0;bottom: -1800px;width: 100%;background-color: rgb(100, 100, 100);color: white;text-align: center;font-size:15px;z-index: 13;font-family: helvetica;}
 footer .footerimg{margin-top:10px;width:150px;}
-.contact footer{bottom:-500px}
+.contact footer{bottom:-550px;}
+.download footer{bottom:0;}
+.updates footer{bottom:-2500px;}
 /*FOOTER*/
 
+/*CONTACT -- TEAM*/   /*DONE*/
+.contact{background-color:rgb(0, 0, 0);z-index: 1;}
+.contact .team{position:absolute;width:100%;height:100%;margin:0;padding:0;left:0;top:100px;color:#fff}
+.contact .team p{font-family: Arial, Helvetica, sans-serif;}
+.contact .team .greenblock{display:block;width:70%;height:20px;background-color:#46e961;}
+.contact .team .TITLE .greenblock, .team .C .greenblock{float:left;left:40px;}
+.contact .team .B .greenblock, .team .D .greenblock{float:right;right:40px;}
+.contact .team .B .greenblock{position:absolute;right:40px;top:350px;}
+.contact .team .C .greenblock{position:absolute;left:40px;top:650px;}
+.contact .team .D .greenblock{position:absolute;right:40px;top:950px;}
+.contact .team .TITLE h1{position:absolute;top:20px;left:100px;font-family: 'Times New Roman', Times, serif;float:left;}
+.contact .team .studentA{position:absolute;left:50px;top:0px;border-left:#c9f820 solid 10px;margin-top:100px;margin-left:75px;margin-bottom:25px;float:left;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
+.contact .team .studentB{position:absolute;right:50px;top:380px;border-right:#c9f820 solid 10px;margin-top:25px;margin-right:75px;margin-bottom:25px;float:right;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
+.contact .team .studentC{position:absolute;left:50px;top:680px;border-left:#c9f820 solid 10px;margin-top:25px;margin-left:75px;margin-bottom:25px;float:left;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
+.contact .team .studentD{position:absolute;right:50px;top:980px;border-right:#c9f820 solid 10px;margin-top:25px;margin-right:75px;margin-bottom:25px;float:right;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
+.contact .studentA:hover,.studentB:hover,.studentC:hover,.studentD:hover{box-shadow:0 0 25px #00b3a4;transition:1s;}
+.contact .team .studentid{position:absolute;top:160px;text-align: center;margin-left:10px;}
+.contact .team .name{text-align: center;}
+.contact .team img{border-radius: 10px;}
+.contact .team table{border-radius:25px;padding:20px;padding-bottom:10px;background-color:rgba(0, 0, 0, 0.2);backdrop-filter: blur(10px);}
+.contact .team table:hover{background-color:#333;}
+.contact .team button{background-color:transparent;border-radius: 10px;border:transparent;}
+.contact .team button:hover{border:transparent;cursor:pointer;}
+.contact .team .paragraph{opacity:0;width:0px;padding:20px;}
+.contact .team .paragraph:hover{opacity:1;transition:1s;}
+@keyframes teamstartanimate {from{left:800px}to{left:50px}}
+.contact .team .studentA,.studentC{animation:teamstartanimate;animation-duration: 1s;animation-delay:0s;}
+@keyframes teamstartanimate2 {from{right:800px}to{right:50px}}
+.contact .team .studentB,.studentD{animation:teamstartanimate2;animation-duration: 1s;animation-delay:0s;}
 /*CONTACT -- TEAM*/
-.contact{background-color:#080808}
-.team{position:absolute;width:100%;height:100%;margin:0;padding:0;left:0;top:100px;color:#fff}
-.team p{font-family: Arial, Helvetica, sans-serif;}
-.team .greenblock{display:block;position:relative;width:70%;height:20px;background-color:#46e961;}
-.team .TITLE .greenblock, .team .C .greenblock{float:left;left:40px;}
-.team .B .greenblock, .team .D .greenblock{float:right;right:40px;}
-.team .TITLE h1{position:absolute;top:20px;left:100px;font-family: 'Times New Roman', Times, serif;float:left;}
-.team .studentA{border-left:#c9f820 solid 10px;margin-top:100px;margin-left:75px;margin-bottom:25px;float:left;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
-.team .studentB{border-right:#c9f820 solid 10px;margin-top:25px;margin-right:75px;margin-bottom:25px;float:right;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
-.team .studentC{border-left:#c9f820 solid 10px;margin-top:25px;margin-left:75px;margin-bottom:25px;float:left;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
-.team .studentD{border-right:#c9f820 solid 10px;margin-top:25px;margin-right:75px;margin-bottom:25px;float:right;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
-.team .name, .team .paragraph{text-align: center;}
-.team img{border-radius: 10px;}
-.team table{border-radius:25px;padding:20px;padding-bottom:10px;background-color:rgba(100,100,100,0.2);backdrop-filter: blur(10px);}
-/*CONTACT -- TEAM*/
+
+/*DOWNLOAD*/ /*DONE*/
+.download body{background-color:#ddd}
+.download b{color:#f00}
+.download .tips{position:absolute;left:0;width:100%;height:28px;top:72px;background-color:#fff;text-align: center;box-shadow:0 2px 2px #444;}
+.download .backboard{width:800px;left:200px;top:300px;bottom:0px;position:absolute;background-color:#fff9f9;box-shadow:0 0 50px #70a1e0;}
+.download .backboard button{position:absolute;width:200px;height:75px;left:20px;margin-top:30px;font-size:30px;background-color:#e2e2e2;}
+.download .backboard button:hover{color:rgb(255, 255, 255);background-color:#333;box-shadow:0 0 20px #00b3a4;cursor:pointer}
+.download .backboard .latest-btn{position:absolute;left:40px;}
+.download .backboard .latest-btn h6{font-size:20px;}
+.download .backboard .latest-btn p{margin-top:-50px;font-size:5px;}
+.download .backboard .stablest-btn{position:absolute;left:40px;top:200px;}
+.download .backboard .stablest-btn h6{font-size:20px;}
+.download .backboard .stablest-btn p{margin-top:-50px;font-size:5px;}
+.download .wrapper{position:absolute;display:grid;width:410px;height:400px;left:1100px;top:300px;column-gap:10px;row-gap:10px;grid-template-columns: repeat(2, 200px);}
+.download .wrapper .first{background-color:#000;grid-column-start:1;grid-column-end:3;grid-row-start:1;grid-row-end:3;z-index:5;box-shadow:0 0 25px #555;}
+.download .wrapper .second{background-color:#000;grid-column-start:1;grid-column-end:3;grid-row-start:1;grid-row-end:3;animation:slideshow 10s infinite;box-shadow:0 0 25px #555;}
+.download .wrapper .third{background-color:#333;display:flex;justify-content: center;align-items: center;font-size: 25px;color:#fff;border-radius: 10px;border-bottom-right-radius: 0px;}
+.download .wrapper .fourth{background-color:#333;display:flex;justify-content: center;align-items: center;font-size: 25px;color:#fff;border-radius: 10px;border-bottom-left-radius: 0px;}
+.download .wrapper .fivth{background-color:#333;display:flex;justify-content: center;align-items: center;font-size: 25px;color:#fff;border-radius: 10px;border-top-right-radius: 0px;}
+.download .wrapper .sixth{background-color:#333;display:flex;justify-content: center;align-items: center;font-size: 25px;color:#fff;border-radius: 10px;border-top-left-radius: 0px;}
+.download .click:hover{background-color:#000;box-shadow:0 0 25px #00b3a4;cursor:pointer;}
+@keyframes slideshow {0%{z-index:10;}50%{z-index:0;}100%{z-index:10;}}
+/*DOWNLOAD*/
+
+/*UNIVERSE*/
+/*UNIVERSE*/
+
+/*UPDATES*/
+.updates .rightboard{position:absolute;width:50%;left:50%;top:0;bottom:-2500px;background-color: #333333;box-shadow:0 0 25px #ff0000;z-index:5;}
+.updates .toptitlearea{display:flex;align-items: center;justify-content: center;}
+.updates .toptitle{position:absolute;height:650px;width:60%;top:0;display:flex;align-items: center;justify-content: center;background-color: #ddd;box-shadow: 0 0 25px #333;z-index:10;}
+.updates .toptitle h1{font-size:100px;}
+.updates .toptitle h3{font-size:20px;position:absolute;bottom:200px;}
+.updates .timeline{display:flex;align-items: center;justify-content: center;}
+.updates .timeline .line{position:absolute;display:flex;align-items: center;justify-content: center;width:60px;top:0;bottom:-2500px;background-color: rgba(0, 85, 110, 0.3);}
+.updates .timeline .left{position:absolute;display:block;height:250px;background-color:transparent;left:150px;}
+.updates .timeline .right{position:absolute;display:block;height:250px;background-color:transparent;right:150px;z-index: 15;}
+.updates table{position:relative;top:0;left:0;width:100%;height:100%;color:#000;}
+.updates .photo{background-color:transparent;}
+.updates .photo img{display:flex;justify-content: center;align-items: center;height:150px;width:150px;}
+.updates .left .paragraph{background-color:transparent;padding-left:20px;border-left:5px solid #06806b}
+.updates .right .paragraph{background-color:transparent;padding-right:20px;border-right:5px solid #800657;color:#fff;}
+/*COUNTS*/
+.updates .timeline .first{top:1000px;}
+.updates .timeline .second{top:1300px;}
+.updates .timeline .third{top:1600px;}
+.updates .timeline .fourth{top:1900px;}
+.updates .timeline .fivth{top:2100px;}
+.updates .timeline .sixth{top:2400px;}
+.updates .timeline .seventh{top:2700px;}
+.updates .timeline .eighth{top:3000px;}
+/*UPDATES*/
+
+/*WIKI*/
+/*WIKI*/

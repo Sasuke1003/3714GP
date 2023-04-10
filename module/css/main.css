@@ -23,7 +23,7 @@ a:active { text-decoration: none;}
 /*Basic setting*/
 
 /*TOP-Navigation Bar*/
-.TOP-navbar {display:block;justify-content: center;align-items: center;position:fixed;padding:0px;margin:-8px;height:70px;width:100%;font-size:20px;left:0px;top:0px;overflow:hidden;z-index:12;border:5px solid rgba(0, 0, 0, 0.8);}
+.TOP-navbar {display:block;justify-content: center;align-items: center;position:fixed;padding:0px;margin:-8px;height:70px;width:100%;font-size:20px;left:0px;top:0px;overflow:hidden;z-index:20;border:5px solid rgba(0, 0, 0, 0.8);}
 .TOP-navbar a {display:block;}
 .TOP-navbar ul {list-style-type: none;margin:0;padding:0;overflow: hidden;background-color:rgba(0, 0 , 0, 0.93);}
 .TOP-navbar li {font-size:20px;margin-top:10px;margin-bottom:15px;float: left; font-family: helvetica;}

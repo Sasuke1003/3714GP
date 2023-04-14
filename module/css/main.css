@@ -1,4 +1,4 @@
-
+/*position:;display:;height:;width:;left:;top:;padding:;margin:;background-color:;color:;*/
 
 /*THIS THEME NAME CALLED "ITE3714 GroupProject".
 MAKING BY Chung's' Studio.
@@ -20,6 +20,7 @@ a:active { text-decoration: none;}
 .universe .fadein{bottom:0px;}
 .updates .fadein{bottom:-2500px;}
 .wiki .fadein{bottom:0px;}
+.rickroll .fadein{bottom:0px;}
 /*Basic setting*/
 
 /*TOP-Navigation Bar*/
@@ -79,6 +80,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 .contact footer{bottom:-550px;}
 .download footer{bottom:0;}
 .updates footer{bottom:-2500px;}
+.rickroll footer{bottom:0;}
 /*FOOTER*/
 
 /*CONTACT -- TEAM*/   /*DONE*/
@@ -150,11 +152,13 @@ footer .footerimg{margin-top:10px;width:150px;}
 .updates .timeline .left{position:absolute;display:block;height:250px;background-color:transparent;left:150px;}
 .updates .timeline .right{position:absolute;display:block;height:250px;background-color:transparent;right:150px;z-index: 15;}
 .updates table{position:relative;top:0;left:0;width:100%;height:100%;color:#000;}
-.updates .photo{background-color:transparent;}
-.updates .photo img{display:flex;justify-content: center;align-items: center;height:150px;width:150px;}
+.updates .photo{background-color:transparent;padding-right:10px;}
+.updates .photo img{display:flex;justify-content: center;align-items: center;height:150px;width:150px;box-shadow:5px 5px 5px #333;}
 .updates .left .paragraph{background-color:transparent;padding-left:20px;border-left:5px solid #06806b}
 .updates .right .paragraph{background-color:transparent;padding-right:20px;border-right:5px solid #800657;color:#fff;}
-.updates .toptitle h3{font-family:helvetica;}
+.updates .toptitle h3, .updates .timeline p{font-family:helvetica;}
+.updates .timeline p{font-size:18px;}
+.updates .timeline .developer{float:right;font-size:15px;font-family:'Times New Roman', Times, serif;}
 /*COUNTS*/
 .updates .timeline .first{top:1000px;}
 .updates .timeline .second{top:1300px;}
@@ -167,4 +171,15 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*UPDATES*/
 
 /*WIKI*/
+.wiki .slideimage{position:absolute;display:flex;height:875px;width:100%;left:0;top:0;padding:0;margin:0;background-color:#000;color:#0f0;}
+.wiki .slideimage .si1{position:relative;display:block;height:750px;width:250px;left:300px;top:100px;padding:0;margin:0;background-color:#f00;color:#fff;}
+.wiki .slideimage .si2{position:relative;display:block;height:750px;width:250px;left:310px;top:100px;padding:0;margin:0;background-color:#0f0;color:#fff;}
+.wiki .slideimage .si3{position:relative;display:block;height:750px;width:250px;left:320px;top:100px;padding:0;margin:0;background-color:#00f;color:#fff;}
+.wiki .slideimage .si4{position:relative;display:block;height:750px;width:250px;left:330px;top:100px;padding:0;margin:0;background-color:#ff0;color:#fff;}
+.wiki .slideimage .si5{position:relative;display:block;height:750px;width:250px;left:340px;top:100px;padding:0;margin:0;background-color:#0ff;color:#fff;}
+.ftp{position:absolute;width:100%;height:200px;background-color:#f0f;color:#000;padding:0;margin:0;left:50%;top:50%;z-index:50;}
 /*WIKI*/
+
+/*RICKROLL*/
+.rickroll .rrv{position:absolute;height:100%;width:100%;top:0;left:0;}
+/*RICKROLL*/

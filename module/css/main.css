@@ -19,7 +19,7 @@ a:hover {text-decoration: none;}
 a:active { text-decoration: none;}
 @keyframes fadein {0%{z-index:100;}100%{z-index:0;background-color:transparent;}}
 .fadein{background-color:rgba(32, 32, 32,1);position:absolute;left:0px;top:72px;width:100%;animation-name:fadein;animation-duration:2s;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
-.contact .fadein{bottom:-550px;}
+.contact .fadein{bottom:-2470px;}
 .download .fadein{bottom:0px;}
 .universe .fadein{bottom:0px;}
 .updates .fadein{bottom:-2500px;}
@@ -87,7 +87,7 @@ input[type="radio"] {position:relative;z-index: 100;display: none;}
 /*FOOTER*/
 footer{user-select: none;border-top: 5px solid rgb(0,0,0);position: absolute;left: 0;bottom: -1800px;width: 100%;background-color: rgb(100, 100, 100);color: white;text-align: center;font-size:15px;z-index: 13;font-family: helvetica;}
 footer .footerimg{margin-top:10px;width:150px;}
-.contact footer{bottom:-550px;}
+.contact footer{bottom:-2470px;}
 .download footer{bottom:0;}
 .updates footer{bottom:-2500px;}
 .rickroll footer{bottom:0;}
@@ -109,7 +109,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 .contact .team .studentC{position:absolute;left:50px;top:680px;border-left:#c9f820 solid 10px;margin-top:25px;margin-left:75px;margin-bottom:25px;float:left;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
 .contact .team .studentD{position:absolute;right:50px;top:980px;border-right:#c9f820 solid 10px;margin-top:25px;margin-right:75px;margin-bottom:25px;float:right;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
 .contact .studentA:hover,.studentB:hover,.studentC:hover,.studentD:hover{box-shadow:0 0 25px #00b3a4;transition:1s;}
-.contact .team .studentid{position:absolute;top:160px;text-align: center;margin-left:10px;}
+.contact .team .workstate{position:absolute;top:160px;text-align: center;}
 .contact .team .name{text-align: center;}
 .contact .team img{border-radius: 10px;}
 .contact .team table{border-radius:25px;padding:20px;padding-bottom:10px;background-color:rgba(0, 0, 0, 0.2);backdrop-filter: blur(10px);}
@@ -122,21 +122,37 @@ footer .footerimg{margin-top:10px;width:150px;}
 .contact .team .studentA,.studentC{animation:teamstartanimate;animation-duration: 1s;animation-delay:0s;}
 @keyframes teamstartanimate2 {from{right:800px}to{right:50px}}
 .contact .team .studentB,.studentD{animation:teamstartanimate2;animation-duration: 1s;animation-delay:0s;}
+.contact .joinus{position:absolute;width:100%;height:100%;top:1350px;left:0;background-color:#ddd;}
+.contact .joinus h1{position:relative;display:flex;justify-content: center;align-items: center;top:30.5%;font-size:100px;color:#ffffff;font-family:'Pacifico';text-shadow:0 0 12px #ffffff,0 0 64px #7effff;}
+.contact .information{font-family: 'poppins',sans-serif;position:absolute;display:flex;justify-content: center;align-items: center;min-height: 100vh;width:100%;top:calc(100% + 1350px);background-color:#141414;left:0;}
+.contact .information .form-box{position: relative;width: 400px;height:550px;background:transparent;border:2px solid rgba(255,255,255,0.5);border-radius: 20px;backdrop-filter: blur(15px);display:flex;justify-content: center;align-items: center;}
+.contact .information h2{font-size: 2em;color:#ffffff;text-align: center;}
+.contact .information .inputbox{position:relative;margin:30px 0;width:310px;border-bottom: 2px solid #ffffff;}
+.contact .information .inputbox label{position:absolute;top:50%;left:5px;transform: translateY(-50%);color:#ffffff;font-size:1em;pointer-events: none;transition: .5s;}
+.contact .information input:focus ~ label,input:valid ~ label{top:-12px;}
+.contact .information .inputbox input{width:100%;height: 50px;background:transparent;border:none;font-size:1em;padding:0 0 0 0;color:#ffffff;}
+.contact .information .inputbox ion-icon{position:absolute;right:8px;color:#ffffff;font-size:1.2em;top:20px;}
+.contact .information button{width:100%;height:40px;border-radius: 45px;background:#fff;border:none;outline:none;cursor: pointer;font-size: 1em;font-weight: 600;}
+.contact .information .csSimg{position:absolute;display:flex;justify-content: center;align-items: center;left:35%;top:10px;width: 125px;}
 /*CONTACT -- TEAM*/
 
 /*DOWNLOAD*/ /*DONE*/
 .download body{background-color:#ddd}
 .download b{color:#f00}
 .download .tips{position:absolute;left:0;width:100%;height:28px;top:72px;background-color:#fff;text-align: center;box-shadow:0 2px 2px #444;}
+.download .download-title{position:absolute;color:#000;top:225px;font-size:50px;font-family: Arial, Helvetica, sans-serif;left:250px;}
 .download .backboard{width:800px;left:200px;top:300px;bottom:0px;position:absolute;background-color:#fff9f9;box-shadow:0 0 50px #70a1e0;}
 .download .backboard button{position:absolute;width:200px;height:75px;left:20px;margin-top:30px;font-size:30px;background-color:#e2e2e2;}
 .download .backboard button:hover{color:rgb(255, 255, 255);background-color:#333;box-shadow:0 0 20px #00b3a4;cursor:pointer}
 .download .backboard .latest-btn{position:absolute;left:40px;}
 .download .backboard .latest-btn h6{font-size:20px;}
-.download .backboard .latest-btn p{margin-top:-50px;font-size:5px;}
+.download .backboard .latest-btn p{margin-top:-50px;font-size:8px;}
 .download .backboard .stablest-btn{position:absolute;left:40px;top:200px;}
 .download .backboard .stablest-btn h6{font-size:20px;}
-.download .backboard .stablest-btn p{margin-top:-50px;font-size:5px;}
+.download .backboard .stablest-btn p{margin-top:-50px;font-size:8px;}
+.download .backboard .paragraph table{position:absolute;top:80px;right:40px;width:350px;height:350px;background-color:transparent;}
+.download .backboard .paragraph thead{height:100px;background-color:transparent;}
+.download .backboard .paragraph thead p{vertical-align: top;position:relative;}
 .download .wrapper{position:absolute;display:grid;width:410px;height:400px;left:1100px;top:300px;column-gap:10px;row-gap:10px;grid-template-columns: repeat(2, 200px);}
 .download .wrapper .first{background-color:#000;grid-column-start:1;grid-column-end:3;grid-row-start:1;grid-row-end:3;z-index:5;box-shadow:0 0 25px #555;}
 .download .wrapper .second{background-color:#000;grid-column-start:1;grid-column-end:3;grid-row-start:1;grid-row-end:3;animation:slideshow 10s infinite;box-shadow:0 0 25px #555;}
@@ -149,6 +165,19 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*DOWNLOAD*/
 
 /*UNIVERSE*/
+.universe img{filter:grayscale(1);transition:.3s linear}
+.universe .slideimage{position:absolute;display:flex;height:875px;width:100%;left:0;top:0;padding:0;margin:0;background-color:#000;color:#0f0;}
+.universe .slideimage .si1{position:relative;display:block;height:750px;width:250px;left:300px;top:100px;padding:0;margin:0;opacity:1;background-color:#f00;color:#fff;animation-name:si1;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
+.universe .slideimage .si2{position:relative;display:block;height:750px;width:250px;left:310px;top:100px;padding:0;margin:0;opacity:1;background-color:#0f0;color:#fff;animation-name:si2;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
+.universe .slideimage .si3{position:relative;display:block;height:750px;width:250px;left:320px;top:100px;padding:0;margin:0;opacity:1;background-color:#00f;color:#fff;animation-name:si3;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
+.universe .slideimage .si4{position:relative;display:block;height:750px;width:250px;left:330px;top:100px;padding:0;margin:0;opacity:1;background-color:#ff0;color:#fff;animation-name:si4;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
+.universe .slideimage .si5{position:relative;display:block;height:750px;width:250px;left:340px;top:100px;padding:0;margin:0;opacity:1;background-color:#0ff;color:#fff;animation-name:si5;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
+@keyframes si1{0%{left:200px;opacity:0;}3%{left:300px;opacity:1;}30%{opacity:1;}100%{left:300px;opacity:10;}}
+@keyframes si2{0%{left:200px;opacity:0;}5%{left:310px;opacity:1;}30%{opacity:1;}100%{left:310px;opacity:10;}}
+@keyframes si3{0%{left:200px;opacity:0;}7%{left:320px;opacity:1;}30%{opacity:1;}100%{left:320px;opacity:10;}}
+@keyframes si4{0%{left:200px;opacity:0;}9%{left:330px;opacity:1;}30%{opacity:1;}100%{left:330px;opacity:10;}}
+@keyframes si5{0%{left:200px;opacity:0;}11%{left:340px;opacity:1;}30%{opacity:1;}100%{left:340px;opacity:10;}}
+.si1 img:hover,.si2 img:hover,.si3 img:hover,.si4 img:hover,.si5 img:hover{cursor:pointer;filter:grayscale(0);margin:5px;}
 /*UNIVERSE*/
 
 /*UPDATES*/
@@ -169,7 +198,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 .updates .toptitle h3, .updates .timeline p{font-family:helvetica;}
 .updates .timeline p{font-size:18px;}
 .updates .timeline .developer{float:right;font-size:15px;font-family:'Times New Roman', Times, serif;}
-/*COUNTS*/
+    /*COUNTS*/
 .updates .timeline .first{top:1000px;}
 .updates .timeline .second{top:1300px;}
 .updates .timeline .third{top:1600px;}
@@ -181,19 +210,11 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*UPDATES*/
 
 /*WIKI*/
-.wiki img{filter:grayscale(1);transition:.3s linear}
-.wiki .slideimage{position:absolute;display:flex;height:875px;width:100%;left:0;top:0;padding:0;margin:0;background-color:#000;color:#0f0;}
-.wiki .slideimage .si1{position:relative;display:block;height:750px;width:250px;left:300px;top:100px;padding:0;margin:0;opacity:1;background-color:#f00;color:#fff;animation-name:si1;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
-.wiki .slideimage .si2{position:relative;display:block;height:750px;width:250px;left:310px;top:100px;padding:0;margin:0;opacity:1;background-color:#0f0;color:#fff;animation-name:si2;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
-.wiki .slideimage .si3{position:relative;display:block;height:750px;width:250px;left:320px;top:100px;padding:0;margin:0;opacity:1;background-color:#00f;color:#fff;animation-name:si3;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
-.wiki .slideimage .si4{position:relative;display:block;height:750px;width:250px;left:330px;top:100px;padding:0;margin:0;opacity:1;background-color:#ff0;color:#fff;animation-name:si4;animation-duration:10s;animation-delay:0;animation-iteration-count: 1;}
-.wiki .slideimage .si5{position:relative;display:block;height:750px;width:250px;left:340px;top:100px;padding:0;margin:0;opacity:1;background-color:#0ff;color:#fff;animation-name:si5;animation-duration:1   0s;animation-delay:0;animation-iteration-count: 1;}
-@keyframes si1{0%{left:200px;opacity:0;}3%{left:300px;opacity:1;}30%{opacity:1;}100%{left:300px;opacity:10;}}
-@keyframes si2{0%{left:200px;opacity:0;}5%{left:310px;opacity:1;}30%{opacity:1;}100%{left:310px;opacity:10;}}
-@keyframes si3{0%{left:200px;opacity:0;}7%{left:320px;opacity:1;}30%{opacity:1;}100%{left:320px;opacity:10;}}
-@keyframes si4{0%{left:200px;opacity:0;}9%{left:330px;opacity:1;}30%{opacity:1;}100%{left:330px;opacity:10;}}
-@keyframes si5{0%{left:200px;opacity:0;}11%{left:340px;opacity:1;}30%{opacity:1;}100%{left:340px;opacity:10;}}
-.si1 img:hover,.si2 img:hover,.si3 img:hover,.si4 img:hover,.si5 img:hover{cursor:pointer;filter:grayscale(0);margin:5px;}
+.wiki .trailer{width:auto;height:auto;background-color:#f00;}
+.wiki .htp{position:absolute;height:250px;width:100%;left:0;top:875px;padding:0;margin:0;background-color:#f00;color:#000;}
+.wiki .htp .first{position:relative;display:flex;height:100px;width:250px;left:20%;top:33%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
+.wiki .htp .second{position:relative;display:flex;height:100px;width:250px;left:43%;top:-7%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
+.wiki .htp .third{position:relative;display:flex;height:100px;width:250px;left:66%;top:-47%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
 /*WIKI*/
 
 /*RICKROLL*/

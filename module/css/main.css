@@ -229,6 +229,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 .wiki .intro .title h1{position:absolute;display:flex;font-size:50px;}
 .wiki .intro .paragraph p{margin-top:0;}
 .wiki .intro .right{padding-left:50px;}
+.wiki .intro b{color:red;}
 .wiki .teach{position:absolute;width:100%;height:100%;padding:0;margin:0;left:0;top:200%;background-color:#000;}
 .wiki .teach video{position:absolute;width:100%;height:100%;}
 .wiki .download{position:absolute;width:100%;height:100%;padding:0;margin:0;left:0;top:300%;background-color:transparent;}

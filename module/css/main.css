@@ -21,7 +21,7 @@ a:active { text-decoration: none;}
 .fadein{background-color:rgba(32, 32, 32,1);position:absolute;left:0px;top:72px;width:100%;animation-name:fadein;animation-duration:2s;animation-iteration-count: 1;animation-direction: normal;animation-fill-mode: forwards;}
 .contact .fadein{bottom:-2470px;}
 .download .fadein{bottom:0px;}
-.universe .fadein{bottom:0px;}
+.universe .fadein{bottom:-3976px;}
 .updates .fadein{bottom:-2500px;}
 .wiki .fadein{bottom:-2907px;}
 .rickroll .fadein{bottom:0px;}
@@ -87,6 +87,7 @@ input[type="radio"] {position:relative;z-index: 100;display: none;}
 footer{user-select: none;border-top: 5px solid rgb(0,0,0);position: absolute;left: 0;bottom: -1800px;width: 100%;background-color: rgb(100, 100, 100);color: white;text-align: center;font-size:15px;z-index: 13;font-family: helvetica;}
 footer .footerimg{margin-top:10px;width:150px;}
 .contact footer{bottom:-2470px;}
+.universe footer{bottom:-3976px;}
 .download footer{bottom:0;}
 .updates footer{bottom:-2500px;}
 .rickroll footer{bottom:0;}
@@ -178,6 +179,41 @@ footer .footerimg{margin-top:10px;width:150px;}
 @keyframes si4{0%{left:200px;opacity:0;}9%{left:330px;opacity:1;}30%{opacity:1;}100%{left:330px;opacity:10;}}
 @keyframes si5{0%{left:200px;opacity:0;}11%{left:340px;opacity:1;}30%{opacity:1;}100%{left:340px;opacity:10;}}
 .si1 img:hover,.si2 img:hover,.si3 img:hover,.si4 img:hover,.si5 img:hover{cursor:pointer;filter:grayscale(0);margin:5px;}
+.universe .charactors{font-family: Arial, Helvetica, sans-serif;}
+.universe .charactors h1{position:absolute;background-color:transparent;font-size:40px;height:0;left:25px;}
+.universe .charactors p{position:absolute;background-color:transparent;font-size:18px;height:0;left:25px;}
+.universe .charactors img{width:100%}
+.universe .charactors .right{position:absolute;bottom:0;}
+
+.universe .charactors .Charlie{position:absolute;display:block;width:100%;height:100%;top:100%;left:0;background-color:transparent}
+.universe .charactors .Charlie h1{top:650px;font-size:60px;left:100px;}
+.universe .charactors .Charlie p{width:1000px;top:750px;font-size:25px;left:100px;}
+.universe .charactors .Charlie img:hover{filter:grayscale(0);box-shadow: 0 0 100px #f00;}
+
+.universe .charactors .Porkguy{position:absolute;display:block;width:50%;height:100%;top:200%;left:0;background-color:transparent}
+.universe .charactors .Porkguy h1{top:630px;}
+.universe .charactors .Porkguy p{top:700px;}
+.universe .charactors .Porkguy img:hover{filter:grayscale(0);box-shadow: 0 0 100px #ff0;}
+
+.universe .charactors .Washguy{position:absolute;display:block;width:50%;height:100%;top:200%;right:0;background-color:transparent}
+.universe .charactors .Washguy h1{top:100px;}
+.universe .charactors .Washguy p{top:170px;}
+.universe .charactors .Washguy img:hover{filter:grayscale(0);box-shadow: 0 0 100px #a57817;}
+
+.universe .charactors .Bitch{position:absolute;display:block;width:50%;height:100%;top:300%;left:0;background-color:transparent}
+.universe .charactors .Bitch h1{top:630px;}
+.universe .charactors .Bitch p{top:700px;}
+.universe .charactors .Bitch img:hover{filter:grayscale(0);box-shadow: 0 0 100px #0ff;}
+
+.universe .charactors .BeggarBoy{position:absolute;display:block;width:50%;height:100%;top:300%;right:0;background-color:transparent}
+.universe .charactors .BeggarBoy h1{top:100px;}
+.universe .charactors .BeggarBoy p{top:170px;}
+.universe .charactors .BeggarBoy img:hover{filter:grayscale(0);box-shadow: 0 0 100px #00f;}
+
+.universe .charactors .BeggarBoss{position:absolute;display:block;width:100%;height:100%;top:400%;left:0;background-color:transparent}
+.universe .charactors .BeggarBoss h1{top:650px;font-size:60px;left:100px;}
+.universe .charactors .BeggarBoss p{width:1000px;top:750px;font-size:25px;left:100px;}
+.universe .charactors .BeggarBoss img:hover{filter:grayscale(0);box-shadow: 0 0 100px #000;}
 /*UNIVERSE*/
 
 /*UPDATES*/

@@ -23,7 +23,7 @@ a:active { text-decoration: none;}
 .download .fadein{bottom:0px;}
 .universe .fadein{bottom:0px;}
 .updates .fadein{bottom:-2500px;}
-.wiki .fadein{bottom:0px;}
+.wiki .fadein{bottom:-2907px;}
 .rickroll .fadein{bottom:0px;}
 ::-webkit-scrollbar{width:12px;}
 ::-webkit-scrollbar-track{background-color:#000}
@@ -50,7 +50,6 @@ a:active { text-decoration: none;}
 .TOP-navbar .langzh-hk{margin-right:0px;}
 .TOP-navbar .right .lang:hover{color:#dbff0e;}
 .TOP-navbar .right .langzh-hk:hover{color:#dbff0e;}
-.TOP-navbar .darkmode{position:absolute;top:20px;right:150px;width:5px;height:5px;background-color:#00072c;border:#333 2px solid;border-radius: 5px;}
 /*TOP-Navigation Bar*/
 
 /*Slideshow*/
@@ -91,6 +90,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 .download footer{bottom:0;}
 .updates footer{bottom:-2500px;}
 .rickroll footer{bottom:0;}
+.wiki footer{bottom:-2907px;}
 /*FOOTER*/
 
 /*CONTACT -- TEAM*/   /*DONE*/
@@ -123,7 +123,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 @keyframes teamstartanimate2 {from{right:800px}to{right:50px}}
 .contact .team .studentB,.studentD{animation:teamstartanimate2;animation-duration: 1s;animation-delay:0s;}
 .contact .joinus{position:absolute;width:100%;height:100%;top:1350px;left:0;background-color:#ddd;}
-.contact .joinus h1{position:relative;display:flex;justify-content: center;align-items: center;top:30.5%;font-size:100px;color:#ffffff;font-family:'Pacifico';text-shadow:0 0 12px #ffffff,0 0 64px #7effff;}
+.contact .joinus h1{position:relative;display:flex;justify-content: center;align-items: center;top:30.5%;font-size:100px;color:#ffffff;font-family:'Pacifico';text-shadow:0 0 12px #a7a7a7,0 0 64px #00b3b3;}
 .contact .information{font-family: 'poppins',sans-serif;position:absolute;display:flex;justify-content: center;align-items: center;min-height: 100vh;width:100%;top:calc(100% + 1350px);background-color:#141414;left:0;}
 .contact .information .form-box{position: relative;width: 400px;height:550px;background:transparent;border:2px solid rgba(255,255,255,0.5);border-radius: 20px;backdrop-filter: blur(15px);display:flex;justify-content: center;align-items: center;}
 .contact .information h2{font-size: 2em;color:#ffffff;text-align: center;}
@@ -183,7 +183,7 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*UPDATES*/
 .updates .rightboard{position:absolute;width:50%;left:50%;top:0;bottom:-2500px;background-color: #333333;box-shadow:0 0 25px #ff0000;z-index:5;}
 .updates .toptitlearea{display:flex;align-items: center;justify-content: center;}
-.updates .toptitle{position:absolute;height:650px;width:60%;top:0;display:flex;align-items: center;justify-content: center;background-color: #ddd;box-shadow: 0 0 25px #333;z-index:10;}
+.updates .toptitle{position:absolute;height:650px;width:60%;top:0;display:flex;align-items: center;justify-content: center;background-color: #ddd;box-shadow: 0 0 25px #1f1f1f;z-index:10;}
 .updates .toptitle h1{font-size:100px;}
 .updates .toptitle h3{font-size:20px;position:absolute;bottom:200px;}
 .updates .timeline{display:flex;align-items: center;justify-content: center;}
@@ -191,8 +191,10 @@ footer .footerimg{margin-top:10px;width:150px;}
 .updates .timeline .left{position:absolute;display:block;height:250px;background-color:transparent;left:150px;}
 .updates .timeline .right{position:absolute;display:block;height:250px;background-color:transparent;right:150px;z-index: 15;}
 .updates table{position:relative;top:0;left:0;width:100%;height:100%;color:#000;}
-.updates .photo{background-color:transparent;padding-right:10px;}
-.updates .photo img{display:flex;justify-content: center;align-items: center;height:150px;width:150px;box-shadow:5px 5px 5px #333;}
+.updates .photo{background-color:transparent;padding-inline:10px;}
+.updates .photo img{display:flex;justify-content: center;align-items: center;height:150px;width:150px;}
+.updates .left img{box-shadow:5px 5px 5px #333;}
+.updates .right img{box-shadow:5px 5px 5px #cccccc;}
 .updates .left .paragraph{background-color:transparent;padding-left:20px;border-left:5px solid #06806b}
 .updates .right .paragraph{background-color:transparent;padding-right:20px;border-right:5px solid #800657;color:#fff;}
 .updates .toptitle h3, .updates .timeline p{font-family:helvetica;}
@@ -210,11 +212,17 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*UPDATES*/
 
 /*WIKI*/
-.wiki .trailer{width:auto;height:auto;background-color:#f00;}
-.wiki .htp{position:absolute;height:250px;width:100%;left:0;top:875px;padding:0;margin:0;background-color:#f00;color:#000;}
+.wiki .trailer{position:absolute;background-color:rgb(0, 255, 106);width:100%;height:100%;left:0;top:0;margin:0;padding: 0;}
+.wiki .trailer video{position:relative;width:100%;height:100%;}
+.wiki .htp{position:absolute;height:250px;width:100%;left:0;top:100%;padding:0;margin:0;background-color:#f00;color:#000;}
 .wiki .htp .first{position:relative;display:flex;height:100px;width:250px;left:20%;top:33%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
 .wiki .htp .second{position:relative;display:flex;height:100px;width:250px;left:43%;top:-7%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
 .wiki .htp .third{position:relative;display:flex;height:100px;width:250px;left:66%;top:-47%;padding:0;margin:0;background-color:transparent;color:#000;border:1px solid #000}
+.wiki .intro{position:absolute;width:100%;height:calc(100% - 250px);padding:0;margin:0;left:0;top:calc(100% + 250px);background-color:transparent;}
+.wiki .teach{position:absolute;width:100%;height:100%;padding:0;margin:0;left:0;top:200%;background-color:#000;}
+.wiki .teach video{position:relative;width:100%;height:100%;}
+.wiki .download{position:absolute;width:100%;height:100%;padding:0;margin:0;left:0;top:300%;background-color:transparent;filter:blur(12px)}
+.wiki .download button{position:absolute;display:block;justify-content: center; align-items: center;margin: 0;padding: 0;top:0;left:0;height:100px;width:250px;background:#f00;}
 /*WIKI*/
 
 /*RICKROLL*/

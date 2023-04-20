@@ -178,11 +178,12 @@ footer .footerimg{margin-top:10px;width:150px;}
 @keyframes si3{0%{left:200px;opacity:0;}7%{left:320px;opacity:1;}30%{opacity:1;}100%{left:320px;opacity:10;}}
 @keyframes si4{0%{left:200px;opacity:0;}9%{left:330px;opacity:1;}30%{opacity:1;}100%{left:330px;opacity:10;}}
 @keyframes si5{0%{left:200px;opacity:0;}11%{left:340px;opacity:1;}30%{opacity:1;}100%{left:340px;opacity:10;}}
-.si1 img:hover,.si2 img:hover,.si3 img:hover,.si4 img:hover,.si5 img:hover{cursor:pointer;filter:grayscale(0);margin:5px;}
-.universe .charactors{font-family: Arial, Helvetica, sans-serif;}
+.universe .slideimage .slide img:hover{cursor:pointer;filter:grayscale(0);margin:5px;}
+
+.universe .charactors{font-family: Arial, Helvetica, sans-serif;color:#000;}
 .universe .charactors h1{position:absolute;background-color:transparent;font-size:40px;height:0;left:25px;}
 .universe .charactors p{position:absolute;background-color:transparent;font-size:18px;height:0;left:25px;}
-.universe .charactors img{width:100%}
+.universe .charactors img{width:100%;-webkit-box-reflect:below 0 0px;}
 .universe .charactors .right{position:absolute;bottom:0;}
 
 .universe .charactors .Charlie{position:absolute;display:block;width:100%;height:100%;top:100%;left:0;background-color:transparent}
@@ -275,5 +276,9 @@ footer .footerimg{margin-top:10px;width:150px;}
 /*WIKI*/
 
 /*RICKROLL*/
+.rickroll{background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(7,7,88,1) 42%, rgba(6,42,205,1) 74%, rgba(226,236,255,1) 100%);}
 .rickroll .rrv{position:absolute;height:100%;width:100%;top:0;left:0;}
 /*RICKROLL*/
+
+/*TEST*/
+/*TEST*/
